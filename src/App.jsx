@@ -12,6 +12,7 @@ function App() {
       <Title mainTitle="About Us"/>
       <About/>
       <Title mainTitle="Testimonials"/>
+      <Testimonials/>
       
     </>
   );

@@ -1,0 +1,33 @@
+.testimony-card{
+    box-shadow: 0 0 2px var(--color--tertiary);
+    width: 50rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.card-customer-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.student-name{
+    text-transform: capitalize;
+    letter-spacing: 1.5;
+}
+
+.card-customer-details img {
+    --size:7rem;
+    width:var(--size);
+    height:var(--size);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+}
+
+.testimony-text{
+    line-height: 1.4;
+    letter-spacing:1.4 ;
+    font-size: 1.5rem;
+}
