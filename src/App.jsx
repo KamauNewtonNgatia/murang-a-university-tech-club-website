@@ -1,19 +1,32 @@
 import "./App.css";
+import React from 'react'
 import Header from "./components/Header/header";
-import Hero from "./components/Hero/Hero";
-import About from "./components/AboutUs/About";
-import Title from "./components/Title/Title";
-import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
+import Home from "./Pages/Home/Home";
+import Leadership from "./Pages/Home/Leadership/Leadership";
+import Tracks from "./Pages/Home/Leadership/Tracks/Tracks";
+import Events from "./Pages/Home/Leadership/Tracks/Events/Events";
+
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
+
 function App() {
   return (
     <>
+      
+      <BrowserRouter>
       <Header/>
-      <Hero/>
-      <Title mainTitle="About Us"/>
-      <About/>
-      <Title mainTitle="Testimonials"/>
-      <Testimonials/>
+      <Routes>
+        <Route path ='/' element = {<Home/>}/>
+        <Route path ='/Leadership' element = {<Leadership/>}/>
+        <Route path ='/Tracks' element = {<Tracks/>}/>
+        <Route path ='/Events' element = {<Events/>}/>
+
+
+      </Routes>
+      
+      </BrowserRouter>
+      
       <Footer/>
     </>
   );

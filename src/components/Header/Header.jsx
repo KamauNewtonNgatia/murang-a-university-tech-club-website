@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import "./header.css";
 
 function HeaderNavigation() {
@@ -7,24 +8,24 @@ function HeaderNavigation() {
       <nav>
         <ol className="navigation-list">
           <li className="navigation-item">
-            <a href="#" className="navigation-link">
+            <Link to="/" className="navigation-link">
               home
-            </a>
+            </Link>
           </li>
           <li className="navigation-item">
-            <a href="#" className="navigation-link">
+            <Link to="/Leadership" className="navigation-link">
               leadership
-            </a>
+            </Link>
           </li>
           <li className="navigation-item">
-            <a href="#" className="navigation-link">
+            <Link to="/Tracks" className="navigation-link">
               tracks
-            </a>
+            </Link>
           </li>
           <li className="navigation-item">
-            <a href="#" className="navigation-link">
+            <Link to="/Events" className="navigation-link">
               events
-            </a>
+            </Link>
           </li>
         </ol>
       </nav>
