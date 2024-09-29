@@ -1,4 +1,4 @@
-import student1 from '../assets/student1.jpg';
+import student1 from "../assets/student1.jpg";
 import student2 from "../assets/student2.jpg";
 import student3 from "../assets/student3.jpg";
 import student4 from "../assets/student4.jpg";
@@ -23,7 +23,7 @@ const testimonies = [
     studentAvatar: student4,
     studentName: "peterson chege",
     text: "The collaborative environment at MUTC helped me grow in cloud engineering, while networking with like-minded tech enthusiasts.",
-  }
+  },
 ];
 
 export default testimonies;

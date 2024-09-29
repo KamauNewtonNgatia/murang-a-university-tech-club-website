@@ -1,14 +1,14 @@
-.footer{
-    background-color: var(--color--tertiary);
-    padding: 5rem;
+.footer {
+  background-color: var(--color--tertiary);
+  padding: 5rem;
 }
 
-.footer-text{
-    color: var(--color--black);
-    text-align: center;
+.footer-text {
+  color: var(--color--black);
+  text-align: center;
 }
 
-.footer-text a{
-    color: var(--color--white);
-    text-transform: capitalize;
+.footer-text a {
+  color: var(--color--white);
+  text-transform: capitalize;
 }

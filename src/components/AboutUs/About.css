@@ -1,35 +1,33 @@
-.about-us-section{
-    display: flex;
-    gap: 3rem;
-    margin-top: 2rem;
-    padding: 2rem;
+.about-us-section {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
-
-@media screen and (max-width:70.5em) {
-.about-us-section{
+@media screen and (max-width: 70.5em) {
+  .about-us-section {
     display: flex;
     flex-wrap: wrap;
+  }
 }
-    
-}
-.card{
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-
-.heading-text{
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--color--tertiary);
-    letter-spacing: 1.5;
-    margin-block: 2rem;
+.card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.paragraph-text{
-    line-height: 1.5;
-    letter-spacing: 1.5;
-    text-align: justify;
-    text-align-last: center;
+.heading-text {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color--tertiary);
+  letter-spacing: 1.5;
+  margin-block: 2rem;
+}
+
+.paragraph-text {
+  line-height: 1.5;
+  letter-spacing: 1.5;
+  text-align: justify;
+  text-align-last: center;
 }

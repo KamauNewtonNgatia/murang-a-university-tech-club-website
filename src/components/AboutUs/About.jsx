@@ -1,8 +1,8 @@
-import missionImage from '../../assets/mission.jpeg';
-import visionImage from '../../assets/vision.jpeg';
-import objectivesImage from '../../assets/objectives.jpeg';
-import valuesImage from '../../assets/values.jpeg';
-import './About.css'
+import missionImage from "../../assets/mission.jpeg";
+import visionImage from "../../assets/vision.jpeg";
+import objectivesImage from "../../assets/objectives.jpeg";
+import valuesImage from "../../assets/values.jpeg";
+import "./About.css";
 function AboutUsCard({ icon, heading, paragraph }) {
   return (
     <div className="card">

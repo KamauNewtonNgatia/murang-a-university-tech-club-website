@@ -1,0 +1,43 @@
+.tracks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.tracks-card {
+  width: 40rem;
+  /* border: 2px solid red; */
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.track-title {
+  text-transform: uppercase;
+  font-style: 3rem;
+  margin-bottom: 1rem;
+}
+
+.track-avatar {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 1.4;
+}
+
+.button {
+  background-color: var(--color--tertiary);
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--color--black);
+  margin-top: 1rem;
+}
