@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header/header";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Leadership from "./Pages/Home/Leadership/Leadership";
