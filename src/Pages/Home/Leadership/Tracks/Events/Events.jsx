@@ -1,5 +1,6 @@
 import React from "react";
-import Event1 from "../../../../../assets/cybersecurity.jpeg";
+import "./Events.css";
+import eventData from "../../../../../data/Events";
 function EventsCard({
   eventName,
   eventAvatar,
@@ -11,12 +12,11 @@ function EventsCard({
     <div className="event-card">
       <h3 className="event-name">{eventName}</h3>
       <img src={eventAvatar} alt={eventName} className="event-avatar" />
-      div.{" "}
-      <event-details>
-        <p>{dayAndTime}</p>
-        <p>{venue}</p>
+      <div className="event-details">
+        <p>Time: {dayAndTime}</p>
+        <p>Venue: {venue}</p>
         <p>{facilitator}</p>
-      </event-details>
+      </div>
     </div>
   );
 }
@@ -24,15 +24,35 @@ function EventsCard({
 function Events() {
   return (
     <div className="event-container">
-      <h3 className="event-name">cybersecurity</h3>
-      <img src={Event1} alt="cybersecurity" className="event-avatar" />
-      <div className="event-details">
-        <p>Time: monday from 4pm tp 7pm</p>
-        <p>Venue: computer lab F04</p>
-        <p>led by: Webster Ifedha.</p>
-      </div>
+      {eventData.map((event, index) => (
+        <EventsCard
+          key={index}
+          eventName={event.eventName}
+          eventAvatar={event.eventAvatar}
+          dayAndTime={event.dayAndTime}
+          venue={event.venue}
+          facilitator={event.facilitator}
+        />
+      ))}
     </div>
   );
 }
+
+// function Events() {
+//   return (
+//     <div className="event-container">
+//        <div className="event-card">
+//       <h3 className="event-name">cybersecurity</h3>
+//       <img src={Event1} alt="cybersecurity" className="event-avatar" />
+//       <div className="event-details">
+//         <p>Time: monday from 4pm to 7pm</p>
+//         <p>Venue: computer lab F04</p>
+//         <p>led by: Webster Ifedha.</p>
+//       </div>
+//     </div>
+//     </div>
+
+//   );
+// }
 
 export default Events;
