@@ -1,5 +1,5 @@
 import React from "react";
-import "./leadership.css";
+import "./Leadership.css";
 
 import leadership from "../../../data/leadership";
 
