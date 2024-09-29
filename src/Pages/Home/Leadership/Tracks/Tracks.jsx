@@ -2,6 +2,10 @@ import React from "react";
 import "./Tracks.css";
 import trackData from "../../../../data/Tracks";
 
+
+
+
+
 function TrackCard({ trackAvatar, trackName, trackDescription }) {
   return (
     <div className="tracks-card">
