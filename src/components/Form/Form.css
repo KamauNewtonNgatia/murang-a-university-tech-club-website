@@ -1,5 +1,49 @@
-.form{
-    width: 70%;
-    border: 2px solid red;
-    margin: 3rem auto;
+.form {
+  width: 70%;
+  padding: 1rem;
+  margin: 3rem auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.form-group-label {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.form-group-input {
+  padding: 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.form-group-input::placeholder {
+  font-style: italic;
+  font-family: 400;
+}
+
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--color--tertiary);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 600;
+  color: var(--color--white);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: inherit;
 }

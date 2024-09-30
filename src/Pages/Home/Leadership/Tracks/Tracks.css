@@ -7,7 +7,6 @@
 
 .tracks-card {
   width: 40rem;
-  /* border: 2px solid red; */
   padding: 2rem;
   justify-content: center;
   align-items: center;
@@ -25,6 +24,7 @@
   margin-bottom: 1rem;
   border-radius: 5px;
   height: 50vh;
+  overflow: hidden;
 }
 
 .description {
@@ -41,4 +41,5 @@
   text-transform: uppercase;
   color: var(--color--black);
   margin-top: 1rem;
+  cursor: pointer;
 }
