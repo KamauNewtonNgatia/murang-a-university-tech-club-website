@@ -1,6 +1,7 @@
 import React from "react";
 import "./Events.css";
 import eventData from "../../../../../data/Events";
+import Title from "../../../../../components/Title/Title";
 function EventsCard({
   eventName,
   eventAvatar,
@@ -23,18 +24,21 @@ function EventsCard({
 
 function Events() {
   return (
-    <div className="event-container">
-      {eventData.map((event, index) => (
-        <EventsCard
-          key={index}
-          eventName={event.eventName}
-          eventAvatar={event.eventAvatar}
-          dayAndTime={event.dayAndTime}
-          venue={event.venue}
-          facilitator={event.facilitator}
-        />
-      ))}
-    </div>
+    <>
+      <Title mainTitle="Weekly Schedule" />
+      <div className="event-container">
+        {eventData.map((event, index) => (
+          <EventsCard
+            key={index}
+            eventName={event.eventName}
+            eventAvatar={event.eventAvatar}
+            dayAndTime={event.dayAndTime}
+            venue={event.venue}
+            facilitator={event.facilitator}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 

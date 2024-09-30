@@ -6,6 +6,7 @@ import leadership from "../../../data/leadership";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import Title from "../../../components/Title/Title";
 
 function LeadershipCard({
   leaderAvatar,
@@ -47,20 +48,23 @@ function LeadershipCard({
 
 function Leadership() {
   return (
-    <div className="leadership-container">
-      {leadership.map((leader, index) => (
-        <LeadershipCard
-          key={index}
-          leaderAvatar={leader.leaderAvatar}
-          leaderName={leader.leaderName}
-          leaderTitle={leader.leaderTitle}
-          leaderBiography={leader.leaderBiography}
-          LinkedIn={leader.LinkedIn}
-          Twitter={leader.Twitter}
-          Facebook={leader.Facebook}
-        />
-      ))}
-    </div>
+    <>
+      <Title mainTitle="MUTC Leaders" />
+      <div className="leadership-container">
+        {leadership.map((leader, index) => (
+          <LeadershipCard
+            key={index}
+            leaderAvatar={leader.leaderAvatar}
+            leaderName={leader.leaderName}
+            leaderTitle={leader.leaderTitle}
+            leaderBiography={leader.leaderBiography}
+            LinkedIn={leader.LinkedIn}
+            Twitter={leader.Twitter}
+            Facebook={leader.Facebook}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 

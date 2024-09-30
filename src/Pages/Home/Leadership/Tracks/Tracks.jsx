@@ -2,9 +2,8 @@ import React from "react";
 import "./Tracks.css";
 import trackData from "../../../../data/Tracks";
 
-
-
-
+import Title from "../../../../components/Title/Title";
+import Form from "../../../../components/Form/Form";
 
 function TrackCard({ trackAvatar, trackName, trackDescription }) {
   return (
@@ -23,16 +22,20 @@ function TrackCard({ trackAvatar, trackName, trackDescription }) {
 
 function Tracks() {
   return (
-    <div className="tracks-container">
-      {trackData.map((track, index) => (
-        <TrackCard
-          key={index}
-          trackAvatar={track.trackAvatar}
-          trackName={track.trackName}
-          trackDescription={track.trackDescription}
-        />
-      ))}
-    </div>
+    <>
+      <Title mainTitle="Tracks Offered at MUTC" />
+      <div className="tracks-container">
+        {trackData.map((track, index) => (
+          <TrackCard
+            key={index}
+            trackAvatar={track.trackAvatar}
+            trackName={track.trackName}
+            trackDescription={track.trackDescription}
+          />
+        ))}
+      </div>
+      <Form />
+    </>
   );
 }
 
