@@ -13,8 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
-  /* background-color: var(--color--primary); */
-  /* padding: 0 1rem; */
+  background-color: rgb(236, 226, 226);
 }
 
 :root {
